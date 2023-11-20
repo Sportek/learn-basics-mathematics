@@ -1,0 +1,31 @@
+:root {
+  --color-darker-background: #cededc;
+  --color-text: #010404;
+  --color-background: #e3f7f5;
+  --color-primary: #7bb8db;
+  --color-secondary: #cbd0f1;
+  --color-accent: #3446bc;
+  --color-red: red;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  background-color: var(--color-background);
+  min-height: 100vh;
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family: Poppins;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
