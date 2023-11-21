@@ -30,7 +30,9 @@ export class Game {
         this._second = answerObject.second;
         this._answer = answerObject.answer;
         this._possibleAnswers = Array.from({ length: amountOfPossibleAnswers - 1 }, () => this.generateRandomNumbers(this._equation).answer);
-        this._possibleAnswers.push(answerObject.answer);
+
+        const randomPlace = Math.floor(Math.random() * (this._possibleAnswers.length + 1));
+        this._possibleAnswers.splice(randomPlace, 0, answerObject.answer);
     }
 
     private readonly _amountOfPossibleAnswers : number;
