@@ -20,6 +20,5 @@ import HeaderComponent from './components/HeaderComponent.vue'
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 </style>
