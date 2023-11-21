@@ -13,7 +13,7 @@ import FooterComponent from './components/FooterComponent.vue'
 
 <style scoped>
 .app {
-  min-height: 100vh;
+  height: 100vh;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
