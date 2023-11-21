@@ -143,6 +143,7 @@ div .content {
   justify-content: center;
   color: white;
   padding: 0.5rem;
+  height: 40px;
 }
 
 .dice {
