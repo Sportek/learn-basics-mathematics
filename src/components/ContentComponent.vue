@@ -93,7 +93,7 @@ div .content {
   align-items: center;
   width: 100%;
   justify-content: center;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .wrapper {
@@ -105,7 +105,7 @@ div .content {
   flex: 1;
   width: 100%;
   max-width: 500px;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .cards-informations {
