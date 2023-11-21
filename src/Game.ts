@@ -90,11 +90,14 @@ export class Game {
             break;
 
             case Symbols.Division:
-                first = getRandomNumber(MAXIMUM[Symbols.Division].min, MAXIMUM[Symbols.Division].max);
+                first = getRandomNumber(MAXIMUM[Symbols.Division].min, MAXIMUM[Symbols.Division].max); // doit être second
                 second = getRandomNumber(MAXIMUM[Symbols.Division].min, MAXIMUM[Symbols.Division].max);
                 // Pour avoir un nombre entier facilement.
-                second = first * second;
-                answer = second / first;
+                // eslint-disable-next-line no-case-declarations
+                const temp = first;
+                first = second * temp;
+                second = temp;
+                answer = first / second;
                 break;
         
             default:

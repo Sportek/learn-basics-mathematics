@@ -12,6 +12,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@types/canvas-confetti": "^1.6.3",
+    "canvas-confetti": "^1.9.1",
     "vue": "^3.3.4"
   },
   "devDependencies": {

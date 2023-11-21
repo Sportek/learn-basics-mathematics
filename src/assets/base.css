@@ -33,3 +33,8 @@ body {
 .clickable:hover {
   cursor: pointer;
 }
+
+.clickable:active {
+  transform: scale(0.95);
+  transition: all 0.1s;
+}
