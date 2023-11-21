@@ -51,7 +51,7 @@ const calculateRatio = (nWins: number, nLoses: number) => {
     <div class="wrapper">
       <div class="play clickable" @click="generateNewGame()">
         <DiceIcon class="dice" />
-        <div class="title">Démarrer une partie</div>
+        <div class="title">Regénérer la partie</div>
       </div>
 
       <div class="cards-informations">
@@ -91,6 +91,7 @@ div .content {
   flex: 1;
   display: flex;
   align-items: center;
+  width: 100%;
   justify-content: center;
 }
 
@@ -101,14 +102,18 @@ div .content {
   align-items: center;
   justify-content: center;
   flex: 1;
+  width: 100%;
   max-width: 500px;
+  padding: 2rem;
 }
 
 .cards-informations {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  width: 100%;
 }
 
 .cards-informations div {
@@ -116,7 +121,6 @@ div .content {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90px;
   height: 140px;
   color: white;
   font-size: xx-large;
@@ -125,10 +129,11 @@ div .content {
 
 .cards-answers {
   display: grid;
-  grid-template-columns: repeat(3, 10rem);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  width: 100%;
 }
 
 .cards-answers div {
@@ -157,6 +162,7 @@ div .content {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  width: 100%;
 }
 
 .stats {
