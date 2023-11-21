@@ -6,7 +6,9 @@ defineProps<{
 </script>
 
 <template>
-  <div class="card">{{ card.type == 'math' ? card.symbol : card.number.toString() }}</div>
+  <div class="card">
+    {{ card.type == 'math' ? card.symbol : card.number.toString() }}
+  </div>
 </template>
 
 <style scoped>
