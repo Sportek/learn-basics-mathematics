@@ -93,6 +93,7 @@ div .content {
   align-items: center;
   width: 100%;
   justify-content: center;
+  padding: 3rem;
 }
 
 .wrapper {
