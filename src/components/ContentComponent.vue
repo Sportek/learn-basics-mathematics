@@ -105,7 +105,7 @@ div .content {
   flex: 1;
   width: 100%;
   max-width: 500px;
-  padding: 2rem 0;
+  padding: 2rem;
 }
 
 .cards-informations {
