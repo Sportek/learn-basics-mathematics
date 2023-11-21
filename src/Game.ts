@@ -1,5 +1,7 @@
 import { getRandomNumber, getRandomEnumValue } from '@/utils'
 
+import { Symbols } from './types';
+
 const MAXIMUM = {
     [Symbols.Addition]: {
         min: 10,
@@ -20,7 +22,7 @@ const MAXIMUM = {
 }
 
 export class Game {
-    constructor(amountOfPossibleAnswers: number, ) {
+    constructor(amountOfPossibleAnswers: number) {
         this._amountOfPossibleAnswers = amountOfPossibleAnswers;
         this._equation = getRandomEnumValue(Symbols);
         const answerObject = this.generateRandomNumbers(this._equation);
@@ -52,6 +54,10 @@ export class Game {
     }
     get answer(): number {
         return this._answer;
+    }
+
+    get possibleAnswers(): number[] {
+        return this._possibleAnswers;
     }
 
     get equation(): Symbols {

@@ -3,7 +3,7 @@ import HeartIcon from './icons/HeartIcon.vue'
 </script>
 
 <template>
-  <div class="footer">Fait avec <HeartIcon /> par Gabriel Landry</div>
+  <div class="footer">Fait avec <HeartIcon class="icon" /> par Gabriel Landry</div>
 </template>
 
 <style scoped>
@@ -18,7 +18,7 @@ import HeartIcon from './icons/HeartIcon.vue'
   padding: 0.5rem;
 }
 
-HeartIcon {
-  display: none;
+.icon {
+  color: red;
 }
 </style>
